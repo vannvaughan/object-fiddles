@@ -3,8 +3,11 @@
 
 //Create an object called me. Give it a key of name with the value being your name, and another key of age with the value being your age. Then alert your name using dot notation.
 
-  //Code here
-
+var me = {
+  name: "Vann",
+  age: 26,
+}
+//alert(me.name)
 
 
 
@@ -15,17 +18,26 @@
 
 //Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday. Have the values to those keys be your favorite thing in that category.
 
-  //Code here
+var favoriteThings = {
+  band: "The Offspring",
+  food: "Burgers",
+  person: "The Hulk",
+  book: "No Easy Day",
+  movie: "Guardians of the Galaxy",
+  holiday: "Thanksgiving"
+}
 
 
 //After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
 
-  //Code here
+favoriteThings.car = "99 Ferrari F355"
+favoriteThings.brand = "Samsung"
 
 
 //Now change the value of the food key in your favoriteThings object to be 'Chicken Nuggets' and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 
-  //Code here
+favoriteThings.food = "Chicken Nuggets"
+favoriteThings.book = "Harry Potter"
 
 
 
@@ -42,17 +54,21 @@ Set the value of that key to 'chapstick'.
 Using dot notation, add another key (or property) to your backPack object
 that is named color, with the value being the color of your backpack. */
 
-  //Code here
+var backPack = {}
+
+var item = "firstPocket"
+backPack[item] = "chapstick"
+backPack.color = "Red"
 
 //After you do the above, alert your entire backPack object.
 
-  //Code here
+/*alert(Object.backPack)*/
 
 /*You probably noticed that it just alerted [object Object].
 Alerting to see the data in your Object doesn't work so well.
 Instead, console.log your whole backPack object and then check out the console. */
 
-  //Code here
+console.log(Object.backPack)
 
 
 
@@ -64,11 +80,21 @@ Instead, console.log your whole backPack object and then check out the console. 
 
 //Create an 'alsoMe' object with the following properties name, age, height, gender, married, eyeColor, hairColor. Fill those properties in with the appropriate values.
 
-  //Code Here
+var alsoMe = {
+  name: "Vann Vaughan",
+  age: 26,
+  height: "6'",
+  gender: "male",
+  married: true,
+  eyeColor: "Hazel",
+  hairColor: "Brown"
+}
 
 //Now, loop through your object and alert every value. *Tyler --> 24 --> 6'0 --> Male, etc etc
 
-  //Code Here
+/*for (var key in alsoMe){
+  alert(key)
+  }*/
 
 
 
@@ -79,13 +105,21 @@ Instead, console.log your whole backPack object and then check out the console. 
 
 
 //Create an Object called 'album' with 5 keys named different song titles that you make up, with the values being the length of each song.
+var album = {
+  downtown: 8,
+  feelingGood: 11,
+  bailar: 6,
+  ophelia: 7,
+  chickenFried: 12
+}
 
-  //Code Here
 
 //Now, loop through your album object alerting every song title individually.
 
-  //Code Here
-
+/*for (var key in obj) {
+  alert(key);
+}
+*/
 
 
 
@@ -96,11 +130,21 @@ Instead, console.log your whole backPack object and then check out the console. 
 
 //Create an object called states that has 5 US states as properties with the values being their population (doesn't have to be accurate).
 
-  //Code Here
+var states = {
+  texas: 100000,
+  georgia: 200000,
+  newYork: 123123123,
+  florida: 00000001,
+  alaska: 2,
+}
 
 //Now, loop through your states object and if the states population is greater than 30K, alert that state.
 
-  //Code Here
+for (var key in states) {
+  if (prop > 30000) {
+    alert(states.key)
+  } 
+}
 
 
 
